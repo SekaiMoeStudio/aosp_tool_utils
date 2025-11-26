@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# 非递归扫描
+# python3 missing_blobs.py ./vendor/lib
+
+# 递归扫描多个路径
+# python3 missing_blobs.py -r ./vendor/lib ./device/mydevice/proprietary
+
 import argparse
 import os
 from pathlib import Path
